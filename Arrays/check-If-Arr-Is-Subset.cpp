@@ -17,7 +17,7 @@ bool isSubset(vector<int>& arr1, vector<int>& arr2) {
 }
 */
 
-/*
+
 bool isSubset(vector<int>& arr1, vector<int>& arr2) {
     unordered_set<int> set(arr2.begin(), arr2.end());
 
@@ -26,7 +26,7 @@ bool isSubset(vector<int>& arr1, vector<int>& arr2) {
     }
     return true;
 }
-*/
+
 
 
 int main() {

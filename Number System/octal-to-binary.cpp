@@ -11,6 +11,7 @@ int solve(int oct) {
         base *= 8;
     }
 
+    
     string binary = "";
     if (decimal == 0) return 0; // Return 0 if decimal is 0
 

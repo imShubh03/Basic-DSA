@@ -3,24 +3,23 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class FindRepeatingElements {
-
+public class FindNonRepeatingElements {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = 8;
+        int n = 6;
         int[] arr = new int[n];
 
-        System.out.println("Enter values in array");
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter the elements in array:");
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
-
-        System.out.println(findRepeating(arr));
+        System.out.println("Non Repeating Elements: " + findNonRepeating(arr));
 
         sc.close();
     }
 
-    public static ArrayList<Integer> findRepeating(int[] arr) {
+    public static ArrayList<Integer> findNonRepeating(int[] arr) {
         ArrayList<Integer> res = new ArrayList<>();
 
         Map<Integer, Integer> map = new HashMap<>();
@@ -34,7 +33,7 @@ public class FindRepeatingElements {
         }
 
         for (int i = 0; i < arr.length; i++) {
-            if (map.get(arr[i]) > 1 && !res.contains(arr[i])) {
+            if (map.get(arr[i]) == 1 && !res.contains(arr[i])) {
                 res.add(arr[i]);
             }
         }

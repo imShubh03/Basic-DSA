@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class MedianOfArray {
     public static void main(String[] args) {
-        int[] arr1 = { 2, 4, 1, 3, 5 }; // [1, 2 ,3 ,4, 5]
+        // int[] arr1 = { 2, 4, 1, 3, 5 };
         int[] arr2 = { 2, 4, 1, 3, 5, 6 };// [1, 2, 3, 4, 5, 6]
         System.out.println(median(arr2));
     }

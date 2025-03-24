@@ -1,3 +1,12 @@
+/*
+ * When the sum of factorial of individual digits of a number is equal to the original number the number is called a strong number. 
+Strong number is also known as Krishnamurthi number/Peterson Number.
+
+Examples 1:
+Input: N = 145
+Output: Yes
+Explanation: 1! + 4! + 5! = 145. Hence 145 is a strong number.
+ */
 public class StrongNumber {
 
     public static void strongNumber(int num) {
@@ -23,7 +32,7 @@ public class StrongNumber {
     }
 
     public static void main(String[] args) {
-        int num = 145;
+        int num = 26;
         strongNumber(num);
     }
 }

@@ -1,7 +1,6 @@
 public class MaximumAndMinimum {
 
     public static void maxAndMin(int num) {
-        int rem = 0;
         int max = Integer.MIN_VALUE;
         int min = Integer.MAX_VALUE;
         while (num > 0) {
